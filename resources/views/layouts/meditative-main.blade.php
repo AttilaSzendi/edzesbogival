@@ -35,7 +35,13 @@
 </head>
 <body>
 
+    @include('layouts.partials._navigation')
+
     @yield('content')
+
+    @include('layouts.partials._footer')
+
+    @include('layouts.partials._loader')
 
     <script src="js/jquery.min.js"></script>
     <script src="js/jquery-migrate-3.0.1.min.js"></script>
